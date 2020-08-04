@@ -2,6 +2,8 @@
 [![MindOrks](https://img.shields.io/badge/mindorks-opensource-blue.svg)](https://mindorks.com/open-source-projects)
 [![MindOrks Community](https://img.shields.io/badge/join-community-blue.svg)](https://mindorks.com/join-community)
 
+The repository was forked form https://github.com/MindorksOpenSource/Dagger-Hilt-Tutorial. Will be use it as a base to future applications.
+
 This repository contains a sample app that implements Dagger-Hilt in MVVM architecture using Kotlin.
 <p align="center">
   <img src="https://github.com/MindorksOpenSource/Dagger-Hilt-Tutorial/blob/master/assets/banner-dagger-hilt.png">
