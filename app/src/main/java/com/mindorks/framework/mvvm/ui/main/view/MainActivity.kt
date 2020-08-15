@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.github.ajalt.timberkt.Timber
 import com.mindorks.framework.mvvm.R
 import com.mindorks.framework.mvvm.data.model.User
 import com.mindorks.framework.mvvm.ui.main.adapter.MainAdapter
@@ -51,11 +52,13 @@ class MainActivity : AppCompatActivity() {
                     recyclerView.visibility = View.VISIBLE
                 }
                 Status.LOADING -> {
+                    Timber.e{"Status Loading"}
                     progressBar.visibility = View.VISIBLE
                     recyclerView.visibility = View.GONE
                 }
                 Status.ERROR -> {
                     //Handle Error
+                    Timber.e{"Status Error"}
                     progressBar.visibility = View.GONE
                     Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
                 }
